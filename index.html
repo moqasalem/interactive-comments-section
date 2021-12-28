@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive comments section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="delete-box" id="deletebox"></div>
+  <!-- Pull dynamic content from the data.json file -->
+  <main>
+    <div class="container">
+      <div class="comments-list" id="comm-list">
+        <!--
+        <div class="comment">
+          <div class="scores">
+            <img src="images/icon-plus.svg" alt="">
+            <span></span>
+            <img src="images/icon-minus.svg" alt="">
+          </div>
+          <div class="comment-body">
+            <img src="" alt="">
+            <span class="time"></span>
+            <span class="reply">
+              <img src="" alt=""> Reply
+            </span>
+          </div>
+        </div>
+      </div>
+      -->
+      </div>
+      <textarea name="comment2" id="" cols="30" rows="10" class=" mobile-screen">Add a comment</textarea>
+       
+      <div class="add-comment" id="addcontainer">
+        <!--<img src="" alt="">-->
+        <input type="text" placeholder="Add a comment" name="comment1" id="comment-box" class="desktop-screen">
+        <input type="submit" value="SEND" class="submit" onclick="sendComment()">
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Moqa Salem</a>.
+  </div>
+  <script src="script.js"></script>
+  <script src="functions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+/*//////////////////////////////////////////////// Document Style ///////////////////////////////////////////////////////////*/
+
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:hsl(0, 0%, 95%);
+    color: #86869a;
+}
+
+strong{
+    color: rgb(24, 24, 24);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width:60%;
+    margin-top: 5%;
+}
+
+.avtar{
+    width: 40px;
+}
+
+.mobile-screen{
+    display: none;
+}
+
+input,textarea{
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input:hover,textarea:hover{
+    border:1px solid rgb(51, 50, 50);
+}
+
+input:active,textarea:active{
+    border:1px solid rgb(51, 50, 50);
+}
+
+
+
+/*//////////////////////////////////////////////// Comments Style ///////////////////////////////////////////////////////////*/
+
+
+.comments-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.comment{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    background-color: white;
+    width: 100%;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.scores{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    row-gap: 1rem;
+    border: 8px;
+    background-color:hsl(0, 0%, 95%);
+}
+
+.scores img{
+    cursor: pointer;
+}
+
+.comment-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.text p{
+    margin-top: 1rem;
+}
+
+.you{
+    background-color: rgb(95, 95, 231);
+    color: white;
+    padding:5px;
+    font-size: 10px;
+}
+
+/*//////////////////////////////////////////////// Reply Style ///////////////////////////////////////////////////////////*/
+
+.reply{
+    margin-left: 47px!important;
+    width: auto;
+}
+
+/* reply text box*/
+.hiddenbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 3%;
+    align-items: flex-start;
+}
+.hiddenbox .submit{
+    padding: 15px 18px;
+}
+
+.hiddenbox .textcomm{
+    height: 100px;
+    width: 100%;
+    border: 1px solid white;
+    box-shadow: -2px 0px 6px #424141;
+    padding: 10px;
+    cursor: pointer;
+}
+.textcomm:hover{
+    border:1px solid rgb(51, 50, 50);
+}
+
+
+.reply-btn{
+    display: flex;
+    column-gap: 10px;
+}
+
+.reply-btn .delete{
+    color: rgb(245, 83, 83);
+    cursor: pointer;
+}
+
+.reply-btn .edit{
+    color:rgb(98, 98, 248);
+    cursor: pointer;
+}
+
+.reply-btn .delete:hover,.reply-btn .edit:hover{
+    opacity: 0.5;
+}
+/*//////////////////////////////////////////////// Add comment Style ///////////////////////////////////////////////////////////*/
+
+/* fixed box*/
+.add-comment{
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1rem;
+}
+
+#comment-box{
+    width:100%;
+    min-width: 200px;
+    min-height: 30px;
+}
+
+.submit{
+    background-color: rgb(95, 95, 231);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit:hover{
+    opacity: 0.5;
+}
+
+/*//////////////////////////////////////////////// Delete box Style ///////////////////////////////////////////////////////////*/
+
+.delete-box{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(12, 12, 12,0.75)
+}
+
+.delete-comment{
+    width: 325px;
+    height: fit-content;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;   
+    box-shadow: -2px 0px 6px #424141;
+    border-radius: 8px;
+}
+
+.delete-comment h3{
+    color: rgb(29, 29, 29);
+}
+
+#no,#yes{
+    text-transform: uppercase;  
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+#no{
+    background-color: #68727E;
+    margin-right: 10px;
+}
+#yes{
+    background-color: #EC6368;
+}
+
+/*//////////////////////////////////////////////// Edit Style ///////////////////////////////////////////////////////////*/
+
+/* space to edit the comment on it*/
+.editbox{
+    height: fit-content;
+    width: 100%;
+    min-height: 100px;
+    max-height: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: -2px 0px 6px #424141;
+}
+
+.editbox:hover,.editbox:active{
+    border:1px solid rgb(51, 50, 50);
+}
+
+.updatediv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.update{
+    display: none;
+    width: fit-content;
+    text-align: right;
+}
+/*//////////////////////////////////////////////// for small screens Style ///////////////////////////////////////////////////////////*/
+
+@media(max-width:805px) {
+    .mobile-screen{
+        display: flex;
+    }
+
+    .desktop-screen{
+        display: none;
+    }
+
+    .add-comment{
+        justify-content: space-between;
+        height: 50px;
+    }
+
+   .reply{
+        margin-left: 17px!important;
+   }
+
+   .add-comment textarea{
+       display: flex;
+       flex-direction: row;
+       width: auto;
+       height: 50px;
+   }
+
+   /*alternative reply bar*/
+   .downbar{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .downbar .scores{
+       display: flex;
+       flex-direction: row;
+       padding: 1rem;
+       column-gap: 1rem;
+       border: 8px;
+       background-color:hsl(0, 0%, 95%);
+   }
+
+   .delete-box{
+       height: 200%;
+   }
+
+}
