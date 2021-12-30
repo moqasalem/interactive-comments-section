@@ -18,53 +18,7 @@ function showReplyBox(repyTo,currentUserImg,id){
 }
 
 
-//////////////////////////////////////////////////////////////////////  Reply functions ////////////////////////////////////////////////////////////////////////
 
-function sendComment(){
-    const commentsList = document.getElementById('comm-list');
-    commentsList.insertAdjacentHTML('beforeend',
-      `<div class="comment" id="comtest">
-        <div class="scores desktop-screen">
-          <img src="images/icon-plus.svg" alt="">
-          <strong>3</strong>
-          <img src="images/icon-minus.svg" alt="">
-        </div>
-
-        <div class="comment-body">
-          <div class="hero">
-            <div class="details">
-            <img src="./images/avatars/image-juliusomo.png" alt="" class="avtar">
-            <strong>juliusomo</strong>
-            <span class="you">you</span>
-            <span class="time">Now</span>
-            </div>
-             <span class="desktop-screen">${options}</span>
-            </div>  
-         <div class="text">
-            <p id="pcom${element.id}">${element.content}</p>
-         </div>
-         <textarea class="editbox" id="editbox${element.id}" style="display:none;"></textarea>
-         <div><button class="submit update"  id="up${element.id}" onclick="updateComment('${element.id}')">UPDATE</button></div>
-         
-
-         <div class="downbar mobile-screen">
-          <div class="scores">
-            <img src="images/icon-plus.svg" alt="">
-            <strong>${element.score}</strong>
-            <img src="images/icon-minus.svg" alt="">
-          </div>
-
-          ${options}
-
-         </div>
-
-         </div>
-        </div>`)
-}
-
-function reply(replyTo){
-
-}
 ////////////////////////////////////////////////////////////////////// Delete ////////////////////////////////////////////////////////////////////////
 
 const deleteBox = document.getElementById('deletebox');
