@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
+- Solution URL: [solution URL](https://github.com/moqasalem/interactive-comments-section)
 - Live Site URL: [live site URL](https://github.com/moqasalem/interactive-comments-section)
 
 ## My process
